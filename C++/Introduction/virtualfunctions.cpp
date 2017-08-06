@@ -9,7 +9,7 @@ class Person{
 
 class Professor:public Person{
     public:
-    virtual void putdata()
+    virtual void putdata() override
     {
         cout<<name<<" "<<age<<" "<<publications<<" "<<id<<endl;
     }
@@ -28,7 +28,7 @@ int Professor::cur_id=0;
 
 class Student:public Person{
     
-    virtual void putdata()
+    virtual void putdata() override
     {
         int sum=0;
         for(int i=0;i<6;i++)
